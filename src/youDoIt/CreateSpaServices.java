@@ -3,9 +3,11 @@ package youDoIt;
 import java.util.Scanner;
 
 public class CreateSpaServices {
-	// Somewhere between 140 & 166 there are services needed for this to work
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		SpaService firstService = new SpaService();
+		SpaService secondService = new SpaService();
 		firstService = getData(firstService);
 		secondService = getData(secondService);
 	}
@@ -14,7 +16,7 @@ public class CreateSpaServices {
 		String service;
 		double price;
 		Scanner keyboard = new Scanner(System.in);
-		System.out.print("Emter service  >> ");
+		System.out.print("Enter service  >> ");
 		service = keyboard.nextLine();
 		System.out.print("Enter price >> ");
 		price = keyboard.nextDouble();
